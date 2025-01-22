@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "squidgamefont";
+  src: url("../GameOfSquids.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(200px) rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1), 0 0 50px rgba(255, 0, 0, 0.8);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 12s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 15s linear infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
