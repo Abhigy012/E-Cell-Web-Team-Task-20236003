@@ -29,13 +29,13 @@ export default function Header() {
         <div className="md:hidden mt-2">
           <ul className="flex flex-col items-center space-y-3">
             <li>
-              <NavLink to="/Home" className={({ isActive }) => isActive ? "text-purple-500 font-semibold" : "text-gray-700 hover:text-purple-500"}>Home</NavLink>
+              <NavLink to="/Home" className={({ isActive }) => isActive ? "text-purple-500 font-semibold" : "text-white hover:text-purple-500"}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/" className={({ isActive }) => isActive ? "text-purple-500 font-semibold" : "text-gray-700 hover:text-purple-500"}>Grid</NavLink>
+              <NavLink to="/" className={({ isActive }) => isActive ? "text-purple-500 font-semibold" : "text-white hover:text-purple-500"}>Grid</NavLink>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/abhay--goyal/" target="_blank" className="text-gray-700 hover:text-purple-500">Linkedin</a>
+              <a href="https://www.linkedin.com/in/abhay--goyal/" target="_blank" className="text-white hover:text-purple-500">Linkedin</a>
             </li>
           </ul>
         </div>
