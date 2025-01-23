@@ -41,11 +41,11 @@ export default function Home_Comp() {
 
   return (
     <div className="flex justify-center items-center bg-gray-300 rounded-lg w-[250px] h-[250px] md:w-[335px] md:h-[337px] lg:w-[385px] lg:h-[385px] p-8 transition-all duration-500">
-      <div className="grid grid-cols-3 gap-2 md:gap-3 lg:gap-4 w-full h-full">
+      <div className="grid grid-cols-3 gap-2 md:gap-3 lg:gap-4 w-full h-full shadow-md shadow-gray-600 ">
         {colors.map((bgColor, index) => (
           <div
             key={index}
-            className={`rounded-lg ${bgColor} w-full h-full transition-all duration-500`}
+            className={`rounded-lg ${bgColor} w-full h-full transition-all duration-500 shadow-md`}
             onClick={() => handleClick(index)}
           />
         ))}
